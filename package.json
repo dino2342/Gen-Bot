@@ -1,0 +1,14 @@
+{
+  "name": "nori-script-discord-bot-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deployment wrapper for the Nori Script Roblox loader Discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm --prefix textdiscord-bot install --no-audit --no-fund",
+    "start": "node textdiscord-bot/core/main.js"
+  },
+  "engines": {
+    "node": ">=16.20.2"
+  }
+}
